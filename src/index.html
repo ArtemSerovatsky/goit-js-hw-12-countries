@@ -1,19 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Country searcher</title>
-  </head>
-  <body>
-    <form class="form-inline search-form js-search-form">
-      <div class="form-group mx-sm-3 mb-2">
-        <label for="searchQuery" class="sr-only"></label>
-        <input type="text" class="form-control" name="query" id="searchQuery" placeholder="Search country  "
-          autocomplete="off" />
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Airlines App</title>
+</head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/material-icons-font@2.0.0/material-icons-font.css" />
+
+<body>
+  <div class="countries container">
+    <section class="wrapper">
+      <h1>Поиск стран</h1>
+      <div class="search">
+
+        <input class="search_input" id="search-country" name="query" placeholder="Input country name..." type="text" />
+        <button type="button" class="cross" data-action="load-more">X</button>
+        <ul class="country_items" id="countries-cont"></ul>
       </div>
-      <ul class="countries js-countries-container"></ul>
-    </form>
-  </body>
+    </section>
+  </div>
+</body>
+
 </html>
